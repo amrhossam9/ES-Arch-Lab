@@ -7,7 +7,7 @@
 
 int main(){
   LCD_init();
-  char *Word = "Yaseen Gamed";
+  char *Word = "Hello";
   for(;;){
     // Moves "hello" 5 positions from left to right
     for(uint8 i = 0; i < 5; i++){
