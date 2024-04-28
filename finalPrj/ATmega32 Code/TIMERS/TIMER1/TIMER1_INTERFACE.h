@@ -1,0 +1,39 @@
+#ifndef TIMER1_INTERFACE_H
+#define TIMER1_INTERFACE_H
+
+typedef enum
+{
+    TIMER1_NORMAL_MODE,
+    TIMER1_CTC_MODE,
+    TIMER1_FASTPWM_MODE
+} et_TIMER1MODE;
+
+typedef enum
+{
+    TIMER1_NO_CLOCK_SOURCE,
+	TIMER1_NO_PRESCALLING,
+	TIMER1_CLK_8_PRESCALER,
+	TIMER1_CLK_64_PRESCALER,
+	TIMER1_CLK_256_PRESCALER,
+	TIMER1_CLK_1024_PRESCALER,
+	TIMER1_EXTERNAL_CLOCK_FALLINGEDGE,
+	TIMER1_EXTERNAL_CLOCK_RISINGEDGE
+} et_TIMER1PRESCALER;
+
+typedef enum
+{
+	TIMER1_inverted,
+	TIMER1_non_inverted
+} ed_TIMER1PWM;
+
+
+void TIMER1_init(et_TIMER1MODE mode, et_TIMER1PRESCALER prescaler);
+void TIMER1_setPWMMode(ed_TIMER1PWM pwmMode);
+void TIMER1_setValue(uint16 value);
+void TIMER1_DUTYCYCLE(uint8 dutyCycle);
+void TIMER1_setCompareValue(uint16 value);
+uint16 TIMER1_readValue();
+
+
+#endif /* TIMER1_INTERFACE_H */
+
