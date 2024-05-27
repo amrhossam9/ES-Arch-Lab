@@ -1,7 +1,7 @@
 # Table of Contents
 
 - [Embedded Systems Architecture Labs](#embedded-systems-architecture-labs)
-- [Final Project - Embedded Systems Monitoring System](#final-project---embedded-systems-monitoring-system)
+- [Final Project - Monitoring System](#final-project---monitoring-system)
 - [Team Members](#team-members)
 
 
