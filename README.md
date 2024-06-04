@@ -53,7 +53,7 @@ An ESP32 module is used for WiFi connectivity, allowing users to access the hous
 - **Plants**: The system provides information about the plants in the house, impacting their health.
 - **Manufacturers**: Suppliers of hardware and software components.
 
-## Components and Pricing
+## Components
 
 | Component              | Description                      |
 |------------------------|----------------------------------|
